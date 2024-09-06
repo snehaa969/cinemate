@@ -14,10 +14,9 @@ export const MovieDetail = () => {
       const json = await response.json()
       setMovie(json);
       console.log(json);
-      
     }
     fetchMovie();
-  }, []);
+  }, [params.id]);
 
   return (
     <main>
